@@ -3,4 +3,4 @@
 
 
 
-export const url = "http://localhost:3001";
+export const url = "https://celulas-igreja-api.onrender.com";
