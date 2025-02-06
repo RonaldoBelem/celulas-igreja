@@ -1,0 +1,166 @@
+.tribo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tribo-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tribo-titulo {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.tribo-simbolo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border: 2px solid #ddd;
+  padding: 0;
+}
+
+.tribo-simbolo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+}
+
+.tribo-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  color: #444;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.info-card p {
+  color: #666;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.membros-count {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  color: #2c5282 !important;
+}
+
+.voltar-button {
+  background: #2c5282;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.voltar-button:hover {
+  background: #1a365d;
+}
+
+/* Estilos específicos para os símbolos das tribos */
+.tribo-simbolo img[src*="ruben"] { background-color: #e53e3e; }
+.tribo-simbolo img[src*="simeao"] { background-color: #dd6b20; }
+.tribo-simbolo img[src*="levi"] { background-color: #d69e2e; }
+.tribo-simbolo img[src*="juda"] { background-color: #38a169; }
+.tribo-simbolo img[src*="efraim"] { background-color: #319795; }
+.tribo-simbolo img[src*="naftali"] { background-color: #3182ce; }
+.tribo-simbolo img[src*="gade"] { background-color: #805ad5; }
+.tribo-simbolo img[src*="aser"] { background-color: #d53f8c; }
+.tribo-simbolo img[src*="issacar"] { background-color: #718096; }
+.tribo-simbolo img[src*="zebulom"] { background-color: #2d3748; }
+.tribo-simbolo img[src*="manasses"] { background-color: #744210; }
+.tribo-simbolo img[src*="benjamim"] { background-color: #285e61; }
+
+/* Estilo para o símbolo padrão */
+.tribo-simbolo img[src*="default"] {
+  background-color: #f7fafc;
+  padding: 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .tribo-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tribo-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tribo-simbolo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.membros-lista {
+  margin-top: 2rem;
+}
+
+.membros-lista h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.membros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.membro-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.membro-card h3 {
+  color: #2c5282;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.membro-card p {
+  color: #666;
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+} 

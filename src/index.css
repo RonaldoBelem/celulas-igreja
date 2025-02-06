@@ -1,0 +1,1305 @@
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #5a72a0; /* Cor solicitada pelo usuário */
+}
+
+button {
+  background-color: #5a72a0;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #475a7c;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #5a72a0;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  background-color: #475a7c;
+  border-radius: 5px;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #e9ecef;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li:nth-child(odd) {
+  background: #f1f3f5;
+}
+
+.table-header {
+  font-weight: bold;
+  background-color: #5a72a0;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-member-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.add-member-form input,
+.add-member-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.add-member-form input:focus,
+.add-member-form select:focus {
+  outline: none;
+  border-color: #5a72a0;
+  box-shadow: 0 0 0 2px rgba(90, 114, 160, 0.2);
+}
+
+.add-member-form button {
+  padding: 12px;
+  background-color: #5a72a0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.add-member-form button:hover {
+  background-color: #475a7c;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-form input,
+.login-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  outline: none;
+  border-color: #5a72a0;
+  box-shadow: 0 0 0 2px rgba(90, 114, 160, 0.2);
+}
+
+.login-form button {
+  padding: 12px;
+  background-color: #5a72a0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: #475a7c;
+}
+
+h2 {
+  color: #5a72a0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.table-header {
+  font-weight: bold;
+  background-color: #5a72a0;
+  color: white;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+  margin-top: 20px;
+}
+
+.table-row {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f1f3f5;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.medal {
+  font-size: 1.4em;
+  margin-left: 8px;
+}
+
+/* Cores diferentes para as posições */
+.table-row:nth-child(1) {
+  background-color: rgba(255, 215, 0, 0.1); /* Ouro */
+}
+
+.table-row:nth-child(2) {
+  background-color: rgba(192, 192, 192, 0.1); /* Prata */
+}
+
+.table-row:nth-child(3) {
+  background-color: rgba(205, 127, 50, 0.1); /* Bronze */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr;
+    font-size: 14px;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 0.5fr 1.2fr 0.8fr 0.8fr 0.8fr;
+    font-size: 12px;
+    gap: 3px;
+  }
+}
+
+/* Estilos para o link da tribo no ranking */
+.tribo-link {
+  color: #5a72a0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.tribo-link:hover {
+  color: #3d4d6f;
+  text-decoration: underline;
+}
+
+/* Estilos para a página de detalhes da tribo */
+.tribo-container {
+  max-width: 1000px !important;
+  padding: 40px;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tribo-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tribo-titulo {
+  font-size: 2.5em;
+  color: #5a72a0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tribo-simbolo {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(90, 114, 160, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tribo-simbolo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(90, 114, 160, 0.3);
+}
+
+.tribo-simbolo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.tribo-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.info-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(90, 114, 160, 0.1);
+}
+
+.card-icon {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.info-card h3 {
+  color: #5a72a0;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.info-card p {
+  color: #2c3e50;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.membros-count {
+  font-size: 1.8em !important;
+  font-weight: 700;
+  color: #5a72a0 !important;
+}
+
+.voltar-button {
+  background-color: #5a72a0;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 30px auto 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.voltar-button:hover {
+  background-color: #475a7c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  text-align: center;
+  padding: 40px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #5a72a0;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Box */
+.error-box {
+  text-align: center;
+  padding: 30px;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .tribo-container {
+    padding: 20px;
+  }
+
+  .tribo-titulo {
+    font-size: 2em;
+  }
+
+  .tribo-simbolo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tribo-info-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tribo-titulo {
+    font-size: 1.8em;
+  }
+
+  .tribo-simbolo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .info-card {
+    padding: 15px;
+  }
+}
+
+/* Estilos para o painel administrativo */
+.admin-login {
+  max-width: 400px !important;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.admin-login h1 {
+  margin-bottom: 30px;
+  color: #5a72a0;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.admin-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.admin-form input:focus {
+  border-color: #5a72a0;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(90, 114, 160, 0.2);
+}
+
+.admin-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5a72a0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.admin-form button:hover {
+  background-color: #475a7c;
+}
+
+/* Centralizar o painel após o login */
+.admin-panel {
+  text-align: center;
+  max-width: 1000px !important;
+  margin: 30px auto;
+}
+
+.header-with-logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.admin-info {
+  text-align: center;
+  color: #5a72a0;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+/* Centralizar a área de busca */
+.search-filters {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.search-form {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 400px;
+}
+
+/* Centralizar a tabela de membros */
+.members-table {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.members-table .table-header,
+.members-table .table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 1fr;
+  gap: 10px;
+  padding: 15px;
+  align-items: center;
+}
+
+.members-table .table-header {
+  background-color: #5a72a0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+
+.members-table .table-row {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.members-table .table-row:nth-child(even) {
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+  }
+
+  .members-table .table-header,
+  .members-table .table-row {
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+  }
+
+  .members-table .table-header span:nth-child(3),
+  .members-table .table-header span:nth-child(4),
+  .members-table .table-row span:nth-child(3),
+  .members-table .table-row span:nth-child(4) {
+    display: none;
+  }
+}
+
+.admin-info {
+  text-align: right;
+  color: #5a72a0;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.admin-info strong {
+  font-weight: 600;
+}
+
+.admin-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.admin-form input::placeholder {
+  color: #999;
+}
+
+/* Adicionar aos estilos existentes */
+.add-member-form input::placeholder,
+.add-member-form select::placeholder {
+  color: #999;
+}
+
+.add-member-form input[required]::placeholder,
+.add-member-form select[required]::placeholder {
+  color: #666;
+}
+
+.add-member-form input[required]::placeholder::after,
+.add-member-form select[required]::placeholder::after {
+  content: " *";
+  color: #e74c3c;
+}
+
+/* Estilo para o texto de campos obrigatórios */
+.required-fields {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.required-fields span {
+  color: #e74c3c;
+}
+
+.success-message {
+  color: #2ecc71;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+
+.required-fields {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.required-fields span {
+  color: #e74c3c;
+  margin-right: 5px;
+}
+
+.header-with-logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  margin: 0;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.secretary-info {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #5a72a0;
+  font-weight: 500;
+}
+
+.secretary-info p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Estilo para os botões de período */
+.period-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0 30px;
+}
+
+.period-buttons button {
+  min-width: 120px;
+  padding: 12px 24px;
+  font-weight: 500;
+}
+
+.period-buttons button.active {
+  background-color: #3d4d6f;
+}
+
+/* Centralizar tabela de ranking */
+.ranking-table {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Ajustar espaçamento da tabela */
+.table-header,
+.table-row {
+  padding: 15px 25px;
+  margin: 0 auto;
+}
+
+/* Centralizar formulário de login */
+.login-form {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Centralizar informações do secretário */
+.secretary-info {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.frequencia-section {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #eee;
+}
+
+.frequencia-section h2 {
+  color: #5a72a0;
+  margin-bottom: 15px;
+}
+
+.frequencia-info {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+.membros-list {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.membro-item {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.membro-item:last-child {
+  border-bottom: none;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.register-frequencia-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5a72a0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.register-frequencia-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.no-members {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+  font-style: italic;
+}
+
+.membro-info {
+  margin-left: auto;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.membro-nome {
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  transition: background-color 0.2s;
+}
+
+.checkbox-label:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilos do Footer */
+.footer {
+  background-color: #5a72a0;
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.footer-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos da Área do Desenvolvedor */
+.dev-area {
+  padding: 20px;
+}
+
+.dev-section {
+  margin: 30px 0;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dev-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.dev-section th,
+.dev-section td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.dev-section th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.dev-section button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+.dev-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.dev-section select,
+.dev-section input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.success-message {
+  color: #2ecc71;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Adicionar estes estilos */
+.header-with-logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.login-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container select:focus {
+  outline: none;
+  border-color: #5a72a0;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.form-buttons button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.form-buttons button:hover {
+  opacity: 0.9;
+}
+
+.status-success {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.status-error {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.dev-section table td button {
+  background-color: #5a72a0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dev-section table td button:hover {
+  background-color: #475a7c;
+}
+
+.dev-section table td .password-cell {
+  font-family: monospace;
+  background: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.dev-section table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.dev-section table td {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.password-status {
+  margin-left: 8px;
+  font-size: 0.8em;
+  color: #666;
+  font-style: italic;
+}
+
+/* Adicionar estes estilos ao seu arquivo CSS */
+.tribos-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tribo-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tribo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tribo-info h3 {
+  color: #5a72a0;
+  margin-bottom: 10px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.form-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-buttons button:first-child {
+  background-color: #5a72a0;
+  color: white;
+}
+
+.form-buttons button:last-child {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Estilos para a área do desenvolvedor */
+.dev-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ffeeba;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  border-color: #5a72a0;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(90, 114, 160, 0.25);
+}
+
+.btn-edit {
+  background-color: #5a72a0;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-save {
+  background-color: #28a745;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+}
+
+.tribo-info p {
+  margin: 5px 0;
+}
+
+.senha-edit {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.senha-edit input {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.senha-edit button {
+  padding: 6px 12px;
+  margin: 0;
+}
+
+.dev-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.dev-section th,
+.dev-section td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.dev-section th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.dev-section button {
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+.secretario-edit {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-secretario {
+  min-width: 200px;
+}
+
+.input-senha {
+  min-width: 150px;
+}
+
+.secretario-edit button {
+  padding: 6px 12px;
+  margin: 0;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.success-message {
+  color: #28a745;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  text-align: center;
+}
