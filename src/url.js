@@ -2,7 +2,7 @@ const isProd = import.meta.env.PROD || process.env.NODE_ENV === 'production';
 
 export const url = isProd 
   ? "https://celulas-igreja-api.onrender.com"
-  : "https://celulas-igreja-api.onrender.com/api";
+  : "https://celulas-igreja-api.onrender.com/";
 
 
 
