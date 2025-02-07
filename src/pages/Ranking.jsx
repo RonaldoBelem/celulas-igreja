@@ -39,7 +39,7 @@ function Ranking() {
           endpoint = "/api/tabela_semanal";
       }
 
-      const response = await axios.get(`${url}${endpoint}`);
+      const response = await axios.get(`${url}/api/${endpoint}`);
       
       // Ordenar o ranking por total de pontos (decrescente) e depois por total de membros (decrescente)
       const sortedData = response.data.sort((a, b) => {
