@@ -7,9 +7,10 @@
 
 const isProd = import.meta.env.PROD || process.env.NODE_ENV === 'production';
 
+// Remove o /api da URL base pois já está incluído nas rotas
 export const url = isProd 
-  ? "/api"  // Usa o rewrite configurado no vercel.json
-  : "http://localhost:3000/api";
+  ? ""  // URL base vazia pois o /api já está nas rotas
+  : "http://localhost:3000";
 
 
 
