@@ -1,11 +1,15 @@
+//const isProd = import.meta.env.PROD || process.env.NODE_ENV === 'production';
+//
+//export const url = isProd 
+//  ? "https://celulas-igreja-api.onrender.com"
+//  : "https://celulas-igreja-api.onrender.com/";
+//
+
 const isProd = import.meta.env.PROD || process.env.NODE_ENV === 'production';
 
 export const url = isProd 
-  ? "https://celulas-igreja-api.onrender.com"
-  : "https://celulas-igreja-api.onrender.com/";
-
-
-
+  ? "/api"  // Usa o rewrite configurado no vercel.json
+  : "http://localhost:3000/api";
 
 
 
