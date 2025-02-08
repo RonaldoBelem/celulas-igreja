@@ -264,10 +264,24 @@ h2 {
     gap: 3px;
   }
   .period-buttons {
-    display: flex;
     flex-direction: column;
-    border-radius: 8px;
   }
+  .button {
+    border-radius: 22px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .login-form button {
+    border-radius: 22px;
+  }
+
+  .admin-form button {
+    border-radius: 22px;
+  }
+
 }
 
 /* Estilos para o link da tribo no ranking */
