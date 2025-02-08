@@ -31,7 +31,7 @@ function Admin() {
 
     try {
       const response = await axios.post(
-        `${url}/api/admin/login`,
+        `${url}/admin/login`,
         {
           username: username.trim(),
           password: adminPassword,
