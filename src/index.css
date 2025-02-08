@@ -483,6 +483,9 @@ h2 {
   .info-card {
     padding: 15px;
   }
+  .bt-adm{
+    border-radius: 22px;
+  }
 }
 
 /* Estilos para o painel administrativo */
