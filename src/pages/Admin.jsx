@@ -125,7 +125,7 @@ function Admin() {
               placeholder="Senha"
               required
             />
-            <button type="submit">Entrar</button>
+            <button className="bt-adm" type="submit">Entrar</button>
             {error && <p className="error-message">{error}</p>}
           </form>
         </div>
