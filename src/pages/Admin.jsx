@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { url } from "../url";
-import "RonaldoBelem/celulas-igreja/src/index.css"
+
 
 function Admin() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -83,7 +83,7 @@ function Admin() {
     try {
       setLoading(true);
       const response = await axios.get(
-        `${url}/api/admin/members?tribe=${tribe}&search=${search}`
+        `${url}/admin/members?tribe=${tribe}&search=${search}`
       );
       setMembers(response.data);
       setError(null);
