@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { url } from "../url";
+import "../index.css"
 
 
 function Admin() {
