@@ -263,6 +263,10 @@ h2 {
     font-size: 12px;
     gap: 3px;
   }
+  .period-buttons {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Estilos para o link da tribo no ranking */
