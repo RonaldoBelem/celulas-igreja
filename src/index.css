@@ -266,6 +266,7 @@ h2 {
   .period-buttons {
     display: flex;
     flex-direction: column;
+    border-radius: 8px;
   }
 }
 
