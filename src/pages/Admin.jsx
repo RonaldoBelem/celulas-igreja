@@ -31,7 +31,7 @@ function Admin() {
 
     try {
       const response = await axios.post(
-        `${url}/admin/login`,
+        `${url}/api/admin/login`,
         {
           username: username.trim(),
           password: adminPassword,
@@ -83,7 +83,7 @@ function Admin() {
     try {
       setLoading(true);
       const response = await axios.get(
-        `${url}/admin/members?tribe=${tribe}&search=${search}`
+        `${url}/api/admin/members?tribe=${tribe}&search=${search}`
       );
       setMembers(response.data);
       setError(null);
