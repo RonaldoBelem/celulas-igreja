@@ -4,10 +4,6 @@
       "source": "/api/:path*",
       "destination": "https://celulas-igreja-api.onrender.com/api/:path*"
     },
-    { 
-      "source": "/:path((?!api).*)", 
-      "destination": "https://celulas-igreja-api.onrender.com/:path*" 
-    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
