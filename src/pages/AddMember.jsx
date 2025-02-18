@@ -13,7 +13,6 @@ function AddMember() {
   const [success, setSuccess] = useState("");
   const [membros, setMembros] = useState([]);
   const [selectedMembers, setSelectedMembers] = useState([]);
-  const [showFrequencia, setShowFrequencia] = useState(false);
 
   // Estados para login do secretário
   const [isLoggedIn, setIsLoggedIn] = useState(false);
