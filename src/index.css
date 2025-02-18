@@ -263,6 +263,27 @@ h2 {
     font-size: 12px;
     gap: 3px;
   }
+  .period-buttons {
+    flex-direction: column;
+  }
+  button {
+    border-radius: 22px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .login-form button {
+    border-radius: 22px;
+  }
+
+  .bt-adm, 
+  .admin-form button {
+    border-radius: 22px;
+  }
+
 }
 
 /* Estilos para o link da tribo no ranking */
@@ -449,7 +470,7 @@ h2 {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .tribo-titulo {
     font-size: 1.8em;
   }
@@ -461,6 +482,9 @@ h2 {
 
   .info-card {
     padding: 15px;
+  }
+  .bt-adm{
+    border-radius: 22px;
   }
 }
 

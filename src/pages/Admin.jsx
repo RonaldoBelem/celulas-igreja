@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { url } from "../url";
+import "../index.css"
+
 
 function Admin() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -124,7 +126,7 @@ function Admin() {
               placeholder="Senha"
               required
             />
-            <button type="submit">Entrar</button>
+            <button className="bt-adm" type="submit">Entrar</button>
             {error && <p className="error-message">{error}</p>}
           </form>
         </div>

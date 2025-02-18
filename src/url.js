@@ -1,11 +1,16 @@
+//const isProd = import.meta.env.PROD || process.env.NODE_ENV === 'production';
+//
+//export const url = isProd 
+//  ? "https://celulas-igreja-api.onrender.com"
+//  : "https://celulas-igreja-api.onrender.com/";
+//
+
 const isProd = import.meta.env.PROD || process.env.NODE_ENV === 'production';
 
+// Remove o /api da URL base pois já está incluído nas rotas
 export const url = isProd 
-  ? "https://celulas-igreja-api.onrender.com"
-  : "http://localhost:3001";
-
-
-
+  ? ""  // URL base vazia pois o /api já está nas rotas
+  : "http://localhost:3000";
 
 
 
