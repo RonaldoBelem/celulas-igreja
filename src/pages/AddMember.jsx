@@ -324,6 +324,7 @@ function AddMember() {
             <label>Nome:</label>
             <input
               type="text"
+              placeholder="Nome completo"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -334,6 +335,7 @@ function AddMember() {
             <label>Endereço:</label>
             <input
               type="text"
+              placeholder="Rua, Avenida, etc."
               value={endereco}
               onChange={(e) => setEndereco(e.target.value)}
               required
@@ -343,7 +345,10 @@ function AddMember() {
           <div className="form-group">
             <label>Telefone:</label>
             <input
-              type="text"
+              type="number"
+              placeholder="(00) 00000-0000"
+              min="10"
+              max="11"
               value={telefone}
               onChange={(e) => setTelefone(e.target.value)}
               required
