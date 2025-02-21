@@ -345,10 +345,8 @@ function AddMember() {
           <div className="form-group">
             <label>Telefone:</label>
             <input
-              type="number"
+              type="tel"
               placeholder="(00) 00000-0000"
-              min="10"
-              max="11"
               value={telefone}
               onChange={(e) => setTelefone(e.target.value)}
               required
