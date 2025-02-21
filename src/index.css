@@ -120,7 +120,7 @@ ul li:nth-child(odd) {
 .add-member-form input,
 .add-member-form select {
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #a0a0a0;
   border-radius: 5px;
   font-size: 16px;
   width: 100%;
