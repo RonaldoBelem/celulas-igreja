@@ -333,7 +333,7 @@ function AddMember() {
 
           <div className="form-group">
             <label>Endereço:</label>
-            <input
+            <textarea className="endereco-textarea" rows="5"
               type="text"
               placeholder="Rua, Avenida, etc."
               value={endereco}
